@@ -1,579 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Shaurya Sharma Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<head>
+<meta charset="utf-8">
+<title>Shaurya Sharma — IT & Software Professional</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Shaurya Sharma — IT & Software Professional based in Abbotsford, BC. Experience, projects, and contact info.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-
-
-
-<style>
-
-/*======================================
-//--//-->   ABOUT
-======================================*/
-
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
-
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
-
-
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
-/* project image zoom effect */
-
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
-
-
-</style>
-
-
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Shaurya Sharma</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(./images/mypic.JPG);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Shaurya Sharma</span></h1>
-
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'CIS Graduate ',
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>Majored in Software Development</h2>
-						<!-- <br> -->
-			            <p> 
-							<a href="https://github.com/shaurya1000/shaurya1000.github.io" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
-
-
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="./images/mypic.JPG" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Shaurya Sharma</span></p>
-										<p><span class="title-s">Job Role: </span> <span>Currently working as a Customer Service Representative at Dollarama</span></p>
-										<p><span class="title-s">Experience: </span> <span> 1 year 9 months</span></p>
-										<p><span class="title-s">Address: </span> <span>Abbotsford, British Columbia, Canada </span></p>
-									  </div>
-									</div>
-								  </div>
-
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>SQL</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>PYTHON</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>JAVA</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>HTML,CSS & BOOTSTRAP</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Networking</span> <span class="pull-right"></span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>Looking to work in a learning and challenging environment,utilizing my skill and  knowledge to the best of my abilities, and contribute positively towards the growth of the organization as well as my personal growth. I am on the dean’s list as well.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span> Graduate Student from University of the Fraser Valley, Abbotsford, BC </span></li>
-									<li class="d-flex"><span>Education:</span> <span>Bachelor's of Computer Information System</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi, French(Beginner)</span></li>
-									<li class="d-flex"><span>Skills:</span> <span>Problem-Solving, Project-Development, Time-Management, Team player </span></li>
-									<li class="d-flex"><span>Programming Skills:</span> <span>HTML, CSS, BOOTSTRAP, JAVA, REACT, PYTHON, SQL, GIT, Proficinet in Netowking & MS Office </span></li>
-									<li class="d-flex"><span>Achievements:</span> <span>Hacakathon Winner 2021, Chilliwack Startup Hackathon Runner Up(2024), Attended EPIC (Entrepreneurship and Process Incubation Centre) workshop , Did certifcation in java, React & Google Analytics </span></li>
-									
-								</ul>
-							</div>
-						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="7">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/shaurya-r-sharma-5bbb751b4/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </section>
-
-
-
-	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>Graduate CIS student from UFV, looking to work in a learning and challenging environment,utilizing my skill and knowledge to the best of my abilities, and contribute positively towards the growth of the organization as well as my personal growth.</p>
-          </div>
-        </div>
-
-		<div class="row">
-			<h1 class="big-4">Experience & Projects</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2022-Present</span>
-						<h2>Customer Service Representative</h2>
-						<span class="position">Dollarama</span> 
-							<ul>
-								<li>Expertly handled cash transactions with precision and efficiency.</li>
-								<li>Provided exceptional customer service, addressed inquiries and concerns promptly.</li>
-								<li>Collaborated effectively with team members to streamline store operations and optimized customer flow.</li>
-								<li> Demonstrated strong attention to detail and accuracy in all tasks to uphold the store standards</li>	
-							</ul>
-						</p>
-					</div>
-
-				</div>
-
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<h2>Projects</h2>
-							<ul>
-							<li>Developed an online cafeteria website in Fall 2020, enhancing user experience anstreamlining ordering processes.</li>
-						<li> Created an automatic irrigation deployment kit in Fall 2021, reducing water wastage by up to 40% through efficient water management techniques.</li>	
-						<li> Designed and developed an Online Food Delivery Service Project in winter 2022, utilizing PHP and MySQL integration for seamless functionality.</li>
-					<li> Completed multiple case-studies in a project management course in the fall of 2022, utilizing the Harvard Business Publishing education tool to gain practical insights and problem-solving skills.</li>
-					<li> Developed an Instagram clone in winter 2024, aiming to elevate skills in web development and user interface design </li>
-					<li> Engaged in game development using Processing with Java in winter 2024, exploring advanced concepts in graphical user interface (GUI) design</li>
-					<li> Developed license plate recognition system using Python for an image processing course in Winter 2024, focusing on computer vision algorithms and machine learning for object recognition.</li>				
-				</ul>
-						</p>
-					</div>
-				</div>
-				</div>
-			</div>
-
-		<br>
-		<br>
-
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2020-2024</span>
-    					<h2>Bachelor's of Computer Information System</h2>
-    					<span class="position">University of Fraser Valley, Abbotsford, British Columbia, Canada</span>
-    				</div>
-    			</div>
-    </section>
-
-   
-
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are some of my recent projects.</p>
-          </div>
-        </div>
-        
-    
-    
-    <div class="row d-flex">
-		<div class="col-md-4 d-flex ftco-animate">
-		  <div class="blog-entry justify-content-end">
-			<a href="https://github.com/shaurya1000/cafe-website" class="block-20 zoom-effect" style="background-image: url('./images/proj_1.JPG');">
-			</a>
-			<div class="text mt-3 float-right d-block">
-			  <h3 class="heading"><a href="https://github.com/shaurya1000/cafe-website">A cafeteria website using HTML, CSS, BOOTSTRAP & JAVASCRIPT</a></h3>
-			  <p>This website act's as an online portal, allowing users to learn about the cafe's history, meet the staff, browse the menu, buy online, view a gallery of delightful delights, read customer reviews, and keep up to date on sustainability efforts and future events.</p>
-			</div>
-		  </div>
-		</div>
-		<div class="col-md-4 d-flex ftco-animate">
-		  <div class="blog-entry justify-content-end">
-			<a href="https://github.com/shaurya1000/metagram" class="block-20 zoom-effect" style="background-image: url('./images/proj_2.JPG');">
-			</a>
-			<div class="text mt-3 float-right d-block">
-			  <h3 class="heading"><a href="https://github.com/shaurya1000/metagram">Created an entire social networking website with key elements to give users a simple and appealing experience.</a></h3>
-			  <p>An entire social networking website with key elements to give users a simple and appealing experience. The website is built using HTML, CSS, jQuery, Bootstrap, PHP, and SQL.</p>
-			</div>
-		  </div>
-		</div>
-		<div class="col-md-4 d-flex ftco-animate">
-		  <div class="blog-entry">
-			<a href="https://github.com/shaurya1000/food-delivery" class="block-20 zoom-effect" style="background-image: url('./images/proj_3.JPG');">
-			</a>
-			<div class="text mt-3 float-right d-block">
-			  <h3 class="heading"><a href="https://github.com/shaurya1000/food-delivery">An online food delivery website</a></h3>
-			  <p>Online Food Delivery Service Project, utilizing PHP and MySQL integration for seamless functionality.</p>
-			</div>
-		  </div>
-		</div>
-	  </div>
-  
-	  <div class="row d-flex">
-		<div class="col-md-4 d-flex ftco-animate">
-		  <div class="blog-entry justify-content-end">
-			<a href="https://github.com/shaurya1000/license-plate" class="block-20 zoom-effect" style="background-image: url('./images/proj_4.JPG');">
-			</a>
-			<div class="text mt-3 float-right d-block">
-			  <h3 class="heading"><a href="https://github.com/shaurya1000/license-plate">A license plate detecting system.</a></h3>
-			  <p>Created a license plate recognition system that will automate the process of recognizing and indicating license plates from photos. This system will use effective computer vision techniques and machine learning algorithms to identify license plates in real-time.</p>
-			</div>
-		  </div>
-		</div>
-		
-		<div class="col-md-4 d-flex ftco-animate">
-		  <div class="blog-entry justify-content-end">
-			<a href="https://github.com/shaurya1000/NativeTongueTranslator" class="block-20 zoom-effect" style="background-image: url('./images/proj_7.JPG');">
-			</a>
-			<div class="text mt-3 float-right d-block">
-			  <h3 class="heading"><a href="https://github.com/shaurya1000/NativeTongueTranslator">NativeTongueTranslator</a></h3>
-			  <p>A translation app which converts english text to halq'emeylem which will help to preserve native's language and culture.</p>
-			</div>
-		  </div>
-		</div>
-		
-		<div class="col-md-4 d-flex ftco-animate">
-		  <div class="blog-entry">
-			<a href="https://github.com/shaurya1000/chatbot" class="block-20 zoom-effect" style="background-image: url('./images/proj_5.JPG');">
-			</a>
-			<div class="text mt-3 float-right d-block">
-			  <h3 class="heading"><a href="https://github.com/shaurya1000/chatbot">An interactive chatbot</a></h3>
-			  <p>The main goal of the Chat Application project is to develop a functional chatbot prototype that can simulate basic user conversations through a graphical user interface (GUI). Chatbot is intended to recognize and respond to specific user queries customized output responses, including user input-processing, event-driven communication, and GUI design in the Python environment.</p>
-			</div>
-		  </div>
-		</div>
-	  </div>
-	
-  
-<br>
-
-<div class="row d-flex">
-	  <div class="col-md-4 d-flex ftco-animate">
-		<div class="blog-entry">
-		<a href="https://github.com/shaurya1000/weatherapp" class="block-20 zoom-effect" style="background-image: url('./images/proj_6.JPG');">
-		</a>
-		<div class="text mt-3 float-right d-block">
-
-		  <h3 class="heading"><a href="https://github.com/shaurya1000/weatherapp"> A WeatherApp website</a></h3>
-		  <p> I have created a weather app website using HTML, CSS, and vanilla JavaScript. 
-			This app uses the Open-Meteo API to show the weather conditions for Chicago, Illinois, USA. 
-			It provides real-time information on temperature, humidity, wind speed, and more, all displayed in an easy-to-read format.
-			</p>
-		</div>
-		</div>
-	  </div>
-	</div>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-brand">Shaurya Sharma</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Let's talk</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
   </div>
-    </section>
+</nav>
+<div class="scroll-progress" id="scrollProgress"></div>
 
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on Github </h2>
-						<div class="heading"> <h4> I like to build new projects using the concepts which I have learned throughout my degree. </h4>
-						<br>
-						<p><a href="https://github.com/shaurya1000" class="btn btn-primary py-3 px-5">GitHub</a></p>
-						</div>
-					</div>
-				</div>
-			<!-- </div> -->
-		</div>
-	</section>
-    <div class="container text-center">
-		<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-			<div class="container">
-				<div class="row justify-content-center mb-5 pb-3">
-					<div class="col-md-7 heading-section text-center ftco-animate">
-						<h1 class="big big-2">Contact</h1>
-						<h2 class="mb-4">Contact Me</h2>
-						<p>Below are the details to reach out to me!</p>
-					</div>
-				</div>
-	
-				<div class="row d-flex contact-info mb-5 justify-content-center">
-					<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-						<div class="align-self-stretch box p-4 text-center">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="icon-map-signs"></span>
-							</div>
-							<h3 class="mb-4">Address</h3>
-							<p>Abbotsford, British Columbia, Canada</p>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-						<div class="align-self-stretch box p-4 text-center">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="icon-phone2"></span>
-							</div>
-							<h3 class="mb-4">Contact Number</h3>
-							<p><a href="tel://0101010101">+1 778-522-6466</a></p>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-						<div class="align-self-stretch box p-4 text-center">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="icon-paper-plane"></span>
-							</div>
-							<h3 class="mb-4">Email Address</h3>
-							<p><a href="mailto:shaurya1680@gmail.com">shaurya1680@gmail.com</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
-	
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://github.com/shaurya1000"><span class="icon-github"></span></a></li>
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/shaurya-r-sharma-5bbb751b4/"><span class="icon-linkedin"></span></a></li>  
-					</ul>
-				<br>
-		   </div>
-   </div>
- </section>
+<section id="home">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="hero-eyebrow" id="helloText">Hello</span>
+      <h1>Shaurya Sharma</h1>
+      <span class="role">IT &amp; Software Professional</span>
+      <p class="sub">A results-driven Computer Information Systems graduate with a solid foundation in web development, database management, machine learning, and operating systems. I enjoy solving complex problems and turning emerging technology into solutions that hold up in the real world.</p>
+      <div class="btn-row">
+        <a href="#projects" class="btn btn-primary">View my work</a>
+        <a href="#contact" class="btn btn-outline">Get in touch</a>
+      </div>
+    </div>
 
+    <div class="hero-photo-wrap">
+      <span class="floaty f1"></span>
+      <span class="floaty f2"></span>
+      <span class="floaty f3"></span>
+      <div class="blob"></div>
+      <img src="./images/mypic.JPG" alt="Portrait of Shaurya Sharma" class="hero-photo">
+    </div>
+  </div>
+  <div class="scroll-cue"><span>Scroll</span><span class="chev"></span></div>
+</section>
 
- 
-	
-    <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
-			</div>
-		  </div>
-		</div>
-	  </footer>
+<div class="stats-band">
+  <div class="wrap center">
+    <div class="role-switch" id="roleSwitch">Software Developer</div>
+  </div>
+</div>
 
+<section id="about">
+  <div class="wrap about-grid">
+    <div data-reveal>
+      <span class="eyebrow">About</span>
+      <div class="info-card">
+        <img src="./images/mypic.JPG" alt="Portrait of Shaurya Sharma" class="info-photo">
+        <div class="row"><span class="k">Location</span><span>Abbotsford, BC, V2S 2N5</span></div>
+        <div class="row"><span class="k">Phone</span><a href="tel:+17785226466">778-522-6466</a></div>
+        <div class="row"><span class="k">Email</span><a href="mailto:shauryas148@gmail.com">shauryas148@gmail.com</a></div>
+        <div class="row"><span class="k">Website</span><a href="https://shaurya1000.github.io/">shaurya1000.github.io</a></div>
+        <div class="row"><span class="k">LinkedIn</span><a href="https://www.linkedin.com/in/shauryasharma211">shauryasharma211</a></div>
+      </div>
+    </div>
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+    <div class="about-body" data-reveal>
+      <h2 class="title">A little about me</h2>
+      <p>I'm a Computer Information Systems graduate from the University of the Fraser Valley with a proven ability to manage intricate projects end to end. My work spans full-stack web development, applied computer vision, and systems administration — and I'm always looking for ways emerging technology can solve real problems for tech-focused teams.</p>
 
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <div class="chip-row" id="langChips"></div>
+      </div>
+      <div class="skill-group">
+        <h3>Tools &amp; Platforms</h3>
+        <div class="chip-row" id="toolChips"></div>
+      </div>
+      <div class="skill-group">
+        <h3>Operating Systems</h3>
+        <div class="chip-row" id="osChips"></div>
+      </div>
+      <div class="skill-group">
+        <h3>Also</h3>
+        <div class="chip-row">
+          <span class="chip">Packet Tracer</span><span class="chip">Microsoft Office</span>
+          <span class="chip">Adaptability</span><span class="chip">Communication</span>
+          <span class="chip">Team Work</span><span class="chip">Time Management</span><span class="chip">Customer Support</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
+<section id="experience">
+  <div class="wrap">
+    <span class="eyebrow">Experience</span>
+    <h2 class="title" data-reveal>Where I've worked</h2>
+    <p class="lede" data-reveal>Hands-on IT support and QA work, backed by two and a half years in fast-paced customer-facing roles.</p>
+
+    <div class="timeline">
+      <div class="tl-item current" data-reveal>
+        <div class="tl-dot"></div>
+        <div class="tl-head">
+          <span class="tl-role">Product Tester / QA Technician</span>
+          <span class="tl-pill">Current</span>
+        </div>
+        <div class="tl-meta">Geek Squad, Best Buy — Langley, BC · March 2025 – Present</div>
+        <ul>
+          <li>Diagnose and resolve hardware and software problems for desktops, laptops, and mobile devices.</li>
+          <li>Install, configure, and upgrade operating systems and software across Windows, Mac, and Android.</li>
+          <li>Perform system maintenance, including data backups, cleanup, and security updates.</li>
+          <li>Coordinate with network and system administrators to resolve escalated technical issues.</li>
+          <li>Document issues, solutions, and updates in the IT Service Management system.</li>
+        </ul>
+      </div>
+
+      <div class="tl-item" data-reveal>
+        <div class="tl-dot"></div>
+        <div class="tl-head"><span class="tl-role">Customer Service Representative</span></div>
+        <div class="tl-meta">Dollarama — Abbotsford, BC · Sep 2022 – March 2025</div>
+        <ul>
+          <li>Accurately managed POS transactions in a fast-paced retail setting.</li>
+          <li>Resolved 90% of customer inquiries on first contact, ensuring satisfaction.</li>
+          <li>Collaborated with the team to streamline workflows and improve service.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <span class="eyebrow">Projects</span>
+    <h2 class="title" data-reveal>Featured work</h2>
+    <p class="lede" data-reveal>A closer look at the projects with results I can point to.</p>
+
+    <div class="feat-projects">
+
+      <div class="feat-card" data-reveal>
+        <div class="feat-head"><span class="feat-title">Metagram (Instagram Clone)</span><span class="feat-date">April 2024</span></div>
+        <ul>
+          <li>Built a full-stack social media platform that boosted user engagement 40% through seamless authentication, profile management, and photo sharing.</li>
+          <li>Implemented WebSockets for real-time chat, cutting message delivery time by 60%.</li>
+          <li>Optimized MySQL queries for faster data retrieval and built a responsive Bootstrap UI for better mobile usability.</li>
+        </ul>
+        <div class="feat-media">
+          <img src="./images/proj_2.jpg" alt="Metagram project screenshot" class="feat-thumb">
+          <div class="feat-metric"><div class="num">40%</div><div class="lbl">engagement lift</div></div>
+        </div>
+      </div>
+
+      <div class="feat-card" data-reveal>
+        <div class="feat-head"><span class="feat-title">License Plate Detection System</span><span class="feat-date">April 2024</span></div>
+        <ul>
+          <li>Built a Python computer vision system with OpenCV that improved license plate detection accuracy from 65% to 92%.</li>
+          <li>Preprocessed images for clarity, cutting false positives by 35%.</li>
+          <li>Documented each step and repeatedly tested and refined the system.</li>
+        </ul>
+        <div class="feat-media">
+          <img src="./images/proj_4.jpg" alt="License plate detection project screenshot" class="feat-thumb">
+          <div class="feat-metric"><div class="num">92%</div><div class="lbl">detection accuracy</div></div>
+        </div>
+      </div>
+
+      <div class="feat-card" data-reveal>
+        <div class="feat-head"><span class="feat-title">Windows &amp; Linux Server Administration</span><span class="feat-date">May 2022</span></div>
+        <ul>
+          <li>Managed Windows and Linux servers, including Active Directory setup and user account management.</li>
+          <li>Improved security through firewall configuration and system lockdowns to prevent unauthorized access.</li>
+          <li>Built expertise in network monitoring, troubleshooting, and performance optimization.</li>
+        </ul>
+        <div class="feat-media">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Servers_in_a_Rack.jpg" alt="Server rack representing Windows and Linux server administration" class="feat-thumb">
+          <div class="feat-metric"><div class="num">2</div><div class="lbl">OS environments</div></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="more-title" data-reveal>More on GitHub</div>
+    <div class="proj-grid">
+      <div class="proj-card" data-reveal>
+        <div class="proj-thumb" style="background-image:url('./images/proj_1.jpg');"></div>
+        <div class="proj-body">
+          <div class="proj-name">cafe-website</div>
+          <p class="proj-desc">Online cafeteria portal with menu browsing, ordering, gallery, and reviews.</p>
+          <a href="https://github.com/shaurya1000/cafe-website" class="proj-link">View code →</a>
+        </div>
+      </div>
+      <div class="proj-card" data-reveal>
+        <div class="proj-thumb" style="background-image:url('./images/proj_2.jpg');"></div>
+        <div class="proj-body">
+          <div class="proj-name">metagram</div>
+          <p class="proj-desc">Full social networking site — see the featured write-up above for details.</p>
+          <a href="https://github.com/shaurya1000/metagram" class="proj-link">View code →</a>
+        </div>
+      </div>
+      <div class="proj-card" data-reveal>
+        <div class="proj-thumb" style="background-image:url('./images/proj_3.jpg');"></div>
+        <div class="proj-body">
+          <div class="proj-name">food-delivery</div>
+          <p class="proj-desc">Online food delivery service built with PHP and MySQL integration.</p>
+          <a href="https://github.com/shaurya1000/food-delivery" class="proj-link">View code →</a>
+        </div>
+      </div>
+      <div class="proj-card" data-reveal>
+        <div class="proj-thumb" style="background-image:url('./images/proj_4.jpg');"></div>
+        <div class="proj-body">
+          <div class="proj-name">license-plate</div>
+          <p class="proj-desc">License plate recognition system — see the featured write-up above for details.</p>
+          <a href="https://github.com/shaurya1000/license-plate" class="proj-link">View code →</a>
+        </div>
+      </div>
+      <div class="proj-card" data-reveal>
+        <div class="proj-thumb" style="background-image:url('./images/proj_5.jpg');"></div>
+        <div class="proj-body">
+          <div class="proj-name">chatbot</div>
+          <p class="proj-desc">Interactive chatbot prototype with a Python GUI and event-driven query handling.</p>
+          <a href="https://github.com/shaurya1000/chatbot" class="proj-link">View code →</a>
+        </div>
+      </div>
+      <div class="proj-card" data-reveal>
+        <div class="proj-thumb" style="background-image:url('./images/proj_6.jpg');"></div>
+        <div class="proj-body">
+          <div class="proj-name">weatherapp</div>
+          <p class="proj-desc">Live weather app for Chicago, IL using the Open-Meteo API — HTML, CSS, and vanilla JS.</p>
+          <a href="https://github.com/shaurya1000/weatherapp" class="proj-link">View code →</a>
+        </div>
+      </div>
+      <div class="proj-card" data-reveal>
+        <div class="proj-thumb" style="background-image:url('./images/proj_7.jpg');"></div>
+        <div class="proj-body">
+          <div class="proj-name">NativeTongueTranslator</div>
+          <p class="proj-desc">Translation app converting English to Halq'eméylem to help preserve Indigenous language and culture.</p>
+          <a href="https://github.com/shaurya1000/NativeTongueTranslator" class="proj-link">View code →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <div class="wrap">
+    <span class="eyebrow">Achievements</span>
+    <h2 class="title" data-reveal>Recognition along the way</h2>
+
+    <div class="ach-grid">
+      <div class="ach-card" data-reveal>
+        <svg class="ach-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4z"/><path d="M7 5H4a3 3 0 0 0 3 4M17 5h3a3 3 0 0 1-3 4"/></svg>
+        <h3>Dean's List, 2021</h3>
+        <p>Recognized for outstanding academic performance.</p>
+      </div>
+      <div class="ach-card" data-reveal>
+        <svg class="ach-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="9" r="6"/><path d="M8.5 14.5 7 22l5-3 5 3-1.5-7.5"/></svg>
+        <h3>First Place, 2021 Hackathon</h3>
+        <p>Developed an automated irrigation kit, increasing water efficiency by 40% and promoting sustainability.</p>
+      </div>
+      <div class="ach-card" data-reveal>
+        <svg class="ach-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 3 7l9 5 9-5-9-5z"/><path d="M3 12l9 5 9-5M3 17l9 5 9-5"/></svg>
+        <h3>Runner-Up, Chilliwack Startup Hackathon, 2024</h3>
+        <p>Built a translation app to help preserve a native language spoken by fewer than 200 people.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" style="padding-top:0;">
+  <div class="wrap">
+    <span class="eyebrow">Education</span>
+    <h2 class="title" data-reveal>Where I studied</h2>
+    <div class="edu-grid">
+      <div class="edu-photo-wrap" data-reveal>
+        <img src="./images/ufv-campus.jpg" alt="University of the Fraser Valley campus grounds, Abbotsford, with Mount Baker in the background" class="edu-photo">
+      </div>
+      <div class="edu-card" data-reveal>
+        <div class="edu-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+        </div>
+        <div>
+          <h3>Bachelor's Degree, Computer Information Systems</h3>
+          <p>University of the Fraser Valley — Abbotsford, BC, Canada</p>
+          <p>2020 - 2024</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap center">
+    <span class="eyebrow">Contact</span>
+    <h2 class="title" data-reveal>Let's build something</h2>
+    <p class="lede" style="margin-left:auto; margin-right:auto;" data-reveal>Open to IT and software development opportunities — I'd love to hear from you.</p>
+
+    <div class="contact-card" data-reveal>
+      <p style="margin:0 0 4px; font-family:var(--serif); font-size:20px;">shauryas148@gmail.com</p>
+      <p style="margin:0; color:var(--ink-soft);">778-522-6466 · Abbotsford, BC</p>
+      <a href="mailto:shauryas148@gmail.com" class="btn btn-primary" style="margin-top:24px;">Send an email</a>
+
+      <div class="contact-links">
+        <a class="icon-btn" href="https://github.com/shaurya1000" aria-label="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.15-.02-2.09-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.07.78 2.15 0 1.56-.01 2.81-.01 3.19 0 .3.2.66.79.55A10.51 10.51 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+        </a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/shauryasharma211" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a class="icon-btn" href="https://shaurya1000.github.io/" aria-label="Website">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 2c1.1 1.4 1.9 3.3 2.3 5.5h-4.6C10.1 7.3 10.9 5.4 12 4zM4.3 13.5A8 8 0 0 1 4 12c0-.5.05-1 .14-1.5h3.4c-.04.5-.06 1-.06 1.5s.02 1 .06 1.5H4.3zm.9 2h3c.3 1.6.8 3 1.5 4.2A8.03 8.03 0 0 1 5.2 15.5zM7.34 8.5h-3a8.03 8.03 0 0 1 4.5-4.2c-.7 1.2-1.2 2.6-1.5 4.2zM12 20c-1.1-1.4-1.9-3.3-2.3-5.5h4.6c-.4 2.2-1.2 4.1-2.3 5.5zm2.66-7.5H9.34c-.04-.5-.06-1-.06-1.5s.02-1 .06-1.5h5.32c.04.5.06 1 .06 1.5s-.02 1-.06 1.5zm.3 6.2c.7-1.2 1.2-2.6 1.5-4.2h3a8.03 8.03 0 0 1-4.5 4.2zm1.7-6.2c.04-.5.06-1 .06-1.5s-.02-1-.06-1.5h3.4c.09.5.14 1 .14 1.5s-.05 1-.14 1.5h-3.4zm-.2-4.5c-.3-1.6-.8-3-1.5-4.2a8.03 8.03 0 0 1 4.5 4.2h-3z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Shaurya Sharma — Abbotsford, BC</div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
 </html>
